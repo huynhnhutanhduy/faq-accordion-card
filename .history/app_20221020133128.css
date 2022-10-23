@@ -1,0 +1,65 @@
+:root {
+  --very-dark-desaturated-blue: hsl(238, 29%, 16%);
+  --soft-red: hsl(14, 88%, 65%);
+  --soft-violet: hsl(273, 75%, 66%);
+  --soft-blue: hsl(240, 73%, 65%);
+  --very-dark-grayish-blue: hsl(237, 12%, 33%);
+  --dark-grayish-blue: hsl(240, 6%, 50%);
+  --light-grayish-blue: hsl(240, 5%, 91%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+*,
+*::before,
+*::after,
+html {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.2rem;
+  font-weight: normal;
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: var(--soft-violet);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.card {
+  max-width: 70rem;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+  background: var(--light-grayish-blue) url("./images/bg-pattern-desktop.svg") no-repeat;
+  background-position-x: -700px;
+  background-position-y: -300px;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+}
+.card-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
